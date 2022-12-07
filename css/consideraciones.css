@@ -1,0 +1,171 @@
+.consideracion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 24px;
+}
+
+.consideracion .txt{
+    margin-bottom: 24px;
+}
+.consideracion li{
+    padding: 0;
+    list-style: none;
+}
+.controles{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D9EEFF;
+    margin: 12px auto;
+    padding: 10px;
+    max-width: 326px;
+    border-radius: 24px;
+
+}
+.controles .menu{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 0 10px;
+    background-color: white;
+    height: 48px;
+    border-radius: 12px;
+    border: solid 1px #7AC2FE;
+    color: #7AC2FE;
+    cursor: pointer;
+    
+}
+
+.controles a{
+    color: #7AC2FE;
+}
+.camino{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.camino .svg{
+    fill: #FFC9C9;
+}
+.camino .dia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%/9);
+    height: 48px;
+    z-index: 2;
+
+}
+
+
+
+.camino .camello{
+    position: absolute;
+    width: calc(100%/9);
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.c1{
+    left: calc((100%/9)*0);  
+}
+
+.c2{
+    left: calc((100%/9)*1);  
+}
+
+.c3{
+    left: calc((100%/9)*2);  
+}
+
+.c4{
+    left: calc((100%/9)*3);  
+}
+
+.c5{
+    left: calc((100%/9)*4);  
+}
+
+.c6{
+    left: calc((100%/9)*5);  
+}
+
+.c7{
+    left: calc((100%/9)*6);  
+}
+
+.c8{
+    left: calc((100%/9)*7);  
+}
+
+.c9{
+    left: calc((100%/9)*8);  
+}
+
+
+.camino .camello img{
+    width: 40px;
+}
+
+.camino .progreso{
+    margin-left: calc();
+    position: absolute;
+    background-color: #FFC9C9;
+    margin-left: calc(100%/18);
+    height: 7px;
+    z-index: 1;
+}
+
+.p1{
+    width: calc((100%/9)*0);
+}
+
+.p2{
+    width: calc((100%/9)*1);
+}
+
+.p3{
+    width: calc((100%/9)*2);
+}
+
+.p4{
+    width: calc((100%/9)*3);
+}
+
+.p5{
+    width: calc((100%/9)*4);
+}
+
+.p6{
+    width: calc((100%/9)*5);
+}
+
+.p7{
+    width: calc((100%/9)*6);
+}
+
+.p8{
+    width: calc((100%/9)*7);
+}
+
+.p9{
+    width: calc((100%/9)*8);
+}
+
+.dias_m li{
+    padding: 1em;
+    border-bottom: solid 1px #269BFE;
+}
+.dias_m a{
+    color: #212121;
+    padding: 1em;
+}
+

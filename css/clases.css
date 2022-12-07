@@ -1,0 +1,741 @@
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4em;
+}
+
+.ul{
+    padding: 0;
+    margin: 0;
+}
+
+.li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;   
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.imgqr{
+    width: 300px;
+    margin: auto;
+}
+
+.menu_flotante{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #FDFDFD;
+    z-index: 5;
+    text-align: center;
+    margin: auto;
+    translate: 100%;
+    transition: all .5s ease;
+    
+}
+
+.menu_flotante.activo{
+    translate: 0;  
+}
+
+.menu_flotante h1{
+    margin-top: 100px;
+}
+.menu_flotante .ul{
+    width: 100%;
+    margin: auto;
+    
+}
+
+.menu_flotante .li{
+    padding: 1em;
+    border-bottom: solid 1px #269BFE;
+}
+
+.menu_flotante a{
+   color: #212121;
+   padding: 1em;
+   
+}
+
+.menu_flotante .svg{
+    fill: #FD504F;
+}
+
+.verqr{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    text-align: center;
+    background-color: #FDFDFD;
+    box-shadow: 0px -4px 4px rgba(33, 33, 33, 0.15);
+    border-radius: 12px 12px 0px 0px;;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.verqr h2{
+    margin-top: 24px;
+}
+
+.verqr.activo2{
+    height: 85vh;
+}
+
+
+.verqr .button_sm{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.button_sm{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 12px;
+}
+
+.button_sm .svg{
+    fill: #FDFDFD;
+}
+
+.container{
+    margin: auto;
+    max-width: 1000px;
+    padding: 0px 24px 24px 24px;
+    
+}
+
+.container img{
+    margin: auto;
+    display: block;
+}
+
+
+
+.into{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+}
+
+
+.topmenu{
+    position: fixed;
+    width: 100%;
+    background-color: #D9EEFFE6;
+    z-index: 3;
+}
+
+.div_spacio{
+    height: 48px;
+    width: 48px;
+    margin: 12px;
+}
+
+.off{
+    display: none;
+}
+
+.header{
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btnm{
+    height: 48px;
+    width: 48px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+.logo{
+    display: flex;
+    border: #1D4A71;
+}
+.logo img{
+    margin: auto;
+    width: 50px;
+    }
+
+.button{
+    height: 48px;
+    width: 48px;
+    margin: 12px;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.button .svg{
+    display: flex;
+    margin: auto;
+    fill: white;
+    
+}
+
+.red{
+    background-color: #FD504F;
+}
+
+.blue{
+    background-color: #7AC2FE; 
+}
+
+
+.menu img{
+    margin: auto;
+    width: 24px;
+}
+.topspace{
+    height: 90px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 24px; */
+    width: 100%;
+    height: 65px;
+    background-color: #1D4A71;
+}
+
+.footer_normal{
+    position: static;
+}
+
+footer p{
+    color: #FDFDFD;
+    font-size:  12px;
+}
+
+.btn_index{
+    margin: 24px auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+.btn_i{
+    padding: 8px;
+    width: 20%;
+    text-align: center;
+    background-color: #D9EEFF;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px 0px #64646426;
+    text-decoration: none;
+    color: #269BFE;
+}
+
+.btn_i img{
+    width: 80px;
+}
+
+.btn_i p{
+   height: 44px; 
+}
+
+
+
+.btn_secundary_red{
+    font-size: 16px;
+    display: block;
+    padding: 13px;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #FD504F;
+    background-color: #FDFDFD;
+    text-decoration: none;
+    color: #FD504F;
+    box-shadow: 4px 4px 8px 0px #64646426;
+}
+
+/* relacionado con el control de las velitas */
+
+.velitas-dias{
+    margin-top: 24px;
+    background-color: #F4FAFF;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    padding: 24px;
+}
+
+.controlvelitas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #D9EEFF;
+    border-radius: 24px;
+    padding: 10px;
+    max-width: 500px;
+}
+
+.controlvelitas .svg{
+    fill: #7AC2FE;
+}
+
+.controlvelitas .button{
+    margin: 0;
+}
+
+.secundaryblue{
+    background-color: #FDFDFD;
+    border: solid 1px #7AC2FE;
+}
+
+.cont_textovelitas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    background-color: #FDFDFD;
+    height: 32px;
+    width: 50%;
+    padding: 8px;
+    border: solid 1px #7AC2FE;
+    color: #7AC2FE;
+}
+.btn_transparente{
+    cursor: pointer;
+    background-color: #FDFDFD;
+}
+
+.btn_transparente .svg{
+    fill: #7AC2FE;
+}
+
+.contenedor-cards{
+    padding: 0 18px;
+    display: flex;
+    background-color: #F4FAFF;
+    overflow: scroll;
+    max-width: 370px;
+    margin: auto;
+}
+
+
+.cardvelitas{
+    min-width: 300px;
+    width: 300px;
+    margin: 6px;
+    background-color: #FDFDFD;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px rgba(100, 100, 100, 0.15);
+    padding: 10px;
+    height: 530px;
+}
+.contenidovelitas{
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    align-items:center;
+}
+.velitas{
+    margin: 0 12px;
+}
+
+/* orden del dia */
+.orden{
+    margin: auto;
+    max-width: 360px;
+    padding-top: 25px;
+}
+
+.orden .btn_secundary_red{
+    margin-top: 0;
+    margin-bottom: 12px;
+    width: 327px;
+}
+
+/* card oraciones */
+.oracion-novena{
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    display: block;
+    padding: 45px 0;
+}
+
+.oracion-novena h2{
+    text-align: center;
+    margin-top: 24px;
+    color: #269BFE;
+}
+.oracion-novena p{
+    text-align: center;
+}
+.oracion-novena .img-novena{
+    margin: auto;
+    background-color: #D9EEFF;
+    width: 164px;
+    height: 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    outline:solid 6px #269BFE;
+    outline-offset: -6px;
+    overflow: hidden;
+    
+}
+.oracion-novena .contenedor-texto{
+    margin: 24px;
+    background-color: #FDFDFD;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.contenedor-texto p{
+    text-align: left;
+}
+
+.contenedor-texto .parrafo{
+    margin-bottom: 12px;
+}
+
+.oracion-novena .contenedor-gozo{
+    margin: 24px;
+    border-radius: 12px;
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+
+.oracion-novena .contenedor-gozo .grande{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.oracion-novena .contenedor-gozo .txt_gozo{
+    background-color: #FDFDFD;
+    margin: 0 6px 24px 6px;
+    padding: 10px;
+    border-radius: 12px;
+    min-width: 254px;
+    border: 1px solid #7AC2FE;
+    box-shadow: 4px 4px 8px rgba(100, 100, 100, 0.15);
+}
+
+.oracion-novena .contenedor-gozo .txt_gozo p{
+    text-align: left;
+}
+
+.oracion-novena .btn_dias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn_secundary_blue{
+    font-size: 16px;
+    display: block;
+    padding: 13px;
+    margin: 6px;
+    max-width: 100px;
+    min-width: 55px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #7AC2FE;
+    background-color: #FDFDFD;
+    text-decoration: none;
+    color: #7AC2FE;
+    box-shadow: 4px 4px 8px 0px #64646426;
+}
+
+.btn_villancicos{
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn_musica{
+    font-size: 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 13px;
+    margin: 6px 6;
+    width: 270px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #7AC2FE;
+    background-color: #FDFDFD;
+    text-decoration: none;
+    color: #7AC2FE;
+    box-shadow: 4px 4px 8px 0px #64646426;
+}
+
+.btn_juegos{
+    display: block;
+    font-size: 16px;
+    padding: 13px;
+    margin: 6px 0px 24px 0px;
+    width: 270px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #7AC2FE;
+    background-color: #FDFDFD;
+    text-decoration: none;
+    color: #7AC2FE;
+    box-shadow: 4px 4px 8px 0px #64646426;
+}
+
+.btn_musica .musica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.cuadrado{
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 48px;
+}
+
+.oracion-novena .contenedor-texto .frase{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.oracion-novena .detalle{
+    position: absolute;
+    background-color: #D9EEFF;
+    width: 100%;
+    height: 242px;
+    top: 127px;
+    z-index: -1;
+    border-radius: 24px 24px 0 0;
+}
+
+.oracion-novena .boton-up{
+    position: absolute;
+    right: 12px;
+    top: 142px;
+    height: 30px;
+    width: 30px;
+    background-color: #7AC2FE;
+    display: flex;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 4px 4px 8px rgba(100, 100, 100, 0.15);
+}
+
+.oracion-novena .boton-up .svg{
+    fill: #FDFDFD;
+}
+
+/* control villancicos */
+
+.controles_v{
+    margin: 0 auto 12px auto;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-self: center;
+    width: 300px;
+    padding: 10px;
+    border-radius: 12px;
+    border: solid 1px #7AC2FE;
+    background-color: #FDFDFD;
+    color: #7AC2FE;
+    box-shadow: 4px 4px 8px rgba(100, 100, 100, 0.15);
+}
+
+.video{
+    margin: 12px auto;
+    width: 100%;
+    height: 400px;
+}
+
+.contenedor_recetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor_recetas .recetas{
+    width:  45%;
+    display: block;
+    border-radius: 12px;
+    padding: 10px;
+    border: solid 1px #7AC2FE;
+    background-color: #FDFDFD;
+    color: #7AC2FE;
+    margin: 6px 0;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(100, 100, 100, 0.15);
+}
+
+.foto_receta{
+    margin: 12px 0;
+    width: 100%;
+}
+
+.foto_receta img{
+    width: 100%;
+}
+
+.recetas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.recetas div{
+    width: 50%;
+}
+
+.recetas li{
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.recetas .numero{
+    list-style: decimal;
+}
+
+@media only screen and (max-width:800px) {
+    body{
+        width: 100%;
+    
+    }
+
+    .btn_index{
+        margin: 24px;
+        width: auto;
+        max-width: 1000px;
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+    
+    .btn_i{
+        padding: 8px;
+        width: 40%;
+        min-width: 120px;
+        text-align: center;
+        background-color: #D9EEFF;
+        margin-bottom: 12px;
+        border-radius: 12px;
+        box-shadow: 4px 4px 8px 0px #64646426;
+        text-decoration: none;
+        color: #269BFE;
+    }
+    
+    .btn_secundary_red{
+        width: 80%;
+        display: block;
+        padding: 13px;
+        margin: 24px auto;
+        text-align: center;
+        border-radius: 12px;
+        border: 1px solid #FD504F;
+        background-color: #FDFDFD;
+        text-decoration: none;
+        color: #FD504F;
+        box-shadow: 4px 4px 8px 0px #64646426;
+    }
+
+    .video{
+        height: 200px;
+    }
+    .contenedor-cards{
+        width: 100%;
+    }
+
+    .btn_villancicos{
+        justify-content: center;
+    }
+
+    .letra{
+        margin-top: 12px;
+    }
+
+    .contenedor_recetas .recetas{
+        width: 100%;
+    }
+
+    .recetas div{
+        margin: 12px 0;
+        width: 100%;
+    }
+
+    footer{
+        position: relative;
+    }
+}
+
+

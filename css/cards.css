@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.zona-cards{
+    background-color: #F4FAFF;
+    padding: 24px 0;
+}
+.carrusel{
+    max-width: 326px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel .o_centro{
+    padding-left: 8px;
+}
+
+.carrusel .controles{
+    background-color: #D9EEFF;
+    margin: 0 8px 12px 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-radius: 24px;
+    color: #7AC2FE;
+    box-shadow: 4px 4px 8px rgba(100, 100, 100, 0.15);
+}
+
+.carrusel .botones{
+    border: solid 1px #7AC2FE;
+    width: 48px;
+    height: 48px;
+    margin: 8px 12px;
+    line-height: 48px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    
+}
+
+.carrusel .activo{
+    background-color: #7AC2FE;
+    color: #fdfdfd;
+}
+.carrusel .grande{
+    width: 400%;
+    display: flex;
+    flex-flow: row;
+
+    transition: all .5s ease;
+    transform: translate(0%);
+    
+}
+
+.carrusel .contenidos{
+    width: calc(100% / 2);
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    margin: 12px;
+    padding: 8px;
+    box-shadow: 4px 4px 8px rgba(100, 100, 100, 0.15);
+}
+
+.carrusel .color{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.carrusel .color img{
+    max-width: 120px;
+    margin-right: 8px;
+}
